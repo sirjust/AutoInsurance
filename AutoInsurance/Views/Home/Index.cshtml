@@ -9,11 +9,11 @@
 
 <div class="row no-gutters m-3 mx-auto">
     <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
-        <div class="card-header text-center mx-auto">
+        <div class="card-header text-center">
             <h5 class="m-0">Enter info here</h5>
         </div>
         <div class="card-body mx-auto">
-            <div class="row no-gutters mx-auto">
+            <div class="row no-gutters mx-auto col-12">
                 @using (Html.BeginForm("GetQuote", "Home", FormMethod.Post))
                 {
                     <div class="form-group col-md-12 mx-auto">
@@ -25,7 +25,6 @@
                     <div class="form-group col-md-12">
                         <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
                     </div>
-                    /*
                     <div class="form-group col-md-12">
                         <input name="DateOfBirth" type="date" class="form-control" placeholder="Date of Birth (mm/dd/yyyy" />
                     </div>
@@ -38,26 +37,29 @@
                     <div class="form-group col-md-12">
                         <input name="CarModel" type="text" class="form-control" placeholder="Car Model" />
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input name="DUI" type="radio" class="form-check-input" id="yes" value="true">
+                    <div class="form-check form-check-inline text-center col-8">
+                        <input name="Dui" type="radio" class="form-check-input btn-block" id="yes" value="true">
                         <label class="form-check-label" for="yes">Yes</label>
-                        <input name="DUI" type="radio" class="form-check-input" id="no" value="false">
+                        <input name="Dui" type="radio" class="form-check-input btn-block" id="no" value="false" checked="checked">
                         <label class="form-check-label" for="no">No</label>
-                        <p class="mx-auto text-center">Have you ever had a DUI?</p>
                     </div>
+                    <p class="mx-auto text-center mt-2">Have you ever had a DUI?</p>
                     <div class="form-group col-md-12">
-                        <input name="Tickets" type="number" class="form-control">
-                        How many speeding tickets have you had?
+                        <input name="Tickets" type="number" class="form-control text-center" placeholder="Tickets">
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input name="Coverage" type="radio" class="form-check-input" id="full" value="full">
+                    <p>How many tickets have you had?</p>
+                    <div class="form-check form-check-inline text-center col-8">
+                        <input name="Coverage" type="radio" class="form-check-input btn-block" id="full" value="full" checked="checked">
                         <label class="form-check-label" for="full">Full</label>
-                        <input name="Coverage" type="radio" class="form-check-input" id="liability" value="liability">
-                        <label class="form-check-label" for="liability">Liability Only</label>
-                        <p class="mx-auto text-center">Would you like full coverage or liability only?</p>
+                        <input name="Coverage" type="radio" class="form-check-input btn-block" id="liability" value="liability">
+                        <label class="form-check-label" for="liability">Liability</label>
                     </div>
-                    */
-                    <btn type="submit" class="btn btn-primary" value="GetQuote">Get Your Quote Now!</btn>
+                    <p class="mx-auto text-center mt-2">Would you like full coverage or liability only?</p>
+                    <div class="form-row text-center">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary" value="GetQuote">Get Your Quote Now!</button>
+                        </div>
+                    </div>
                 }
             </div>
         </div>

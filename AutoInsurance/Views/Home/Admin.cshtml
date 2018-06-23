@@ -1,7 +1,30 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@using AutoInsurance.ViewModels
+@using AutoInsurance.Models
+@model List<AdminVm>
 
-<p>Use this area to provide additional information.</p>
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx=auto shadow">
+        <div class="m-0">
+            <h5 class="card-header m-0 text-center">Customers</h5>
+        </div>
+        <div class="card-body mx-auto">
+            @foreach (var customer in Model)
+            {
+                <div class="row text-left">
+                    <div class="col">
+                        @customer.FirstName
+                    </div>
+                    <div class="col">
+                        @customer.LastName
+                    </div>
+                    <div class="col">
+                        @customer.EmailAddress
+                    </div>
+                    <div class="row text-left col">
+                        @customer.Quote
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

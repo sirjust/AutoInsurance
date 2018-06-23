@@ -94,3 +94,4 @@ C:\Users\SirJUST\source\repos\AutoInsurance\AutoInsurance\obj\Debug\AutoInsuranc
 C:\Users\SirJUST\source\repos\AutoInsurance\AutoInsurance\obj\Debug\AutoInsurance.csproj.CopyComplete
 C:\Users\SirJUST\source\repos\AutoInsurance\AutoInsurance\obj\Debug\AutoInsurance.dll
 C:\Users\SirJUST\source\repos\AutoInsurance\AutoInsurance\obj\Debug\AutoInsurance.pdb
+C:\Users\SirJUST\source\repos\AutoInsurance\AutoInsurance\obj\Debug\AutoInsurance.csprojAssemblyReference.cache
